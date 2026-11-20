@@ -1,0 +1,6 @@
+{
+  "name": "Aperture Mobile",
+  "description": "Responsive hardware gallery showcasing current flagship mobile phone models with studio photography, hover specification overlays, and side-by-side spec comparison.",
+  "requestFramePermissions": ["camera", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
