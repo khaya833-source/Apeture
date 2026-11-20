@@ -800,7 +800,7 @@ export default function App() {
             href="#top"
             className="font-display text-lg font-bold tracking-tight text-[#111111] dark:text-[#F4F4F2] whitespace-nowrap shrink-0"
           >
-            Aperture Mobile
+            Aperture Website
           </a>
 
           {/* Zone 2: 5 concise single-line website navigation links */}
@@ -876,6 +876,47 @@ export default function App() {
             </button>
           </div>
         </div>
+
+        {/* Mobile Website Navigation Strip */}
+        <nav
+          aria-label="Mobile website navigation"
+          className="md:hidden border-t border-[#EAEAE6] dark:border-[#222226] px-6 py-2 flex items-center gap-5 overflow-x-auto text-xs font-medium text-[#5C5C58] dark:text-[#A1A1AA]"
+        >
+          <a
+            href="#phone-gallery"
+            onClick={() => setActiveFilter('all')}
+            className="whitespace-nowrap shrink-0 hover:text-[#111111] dark:hover:text-[#F4F4F2]"
+          >
+            Phones
+          </a>
+          <button
+            type="button"
+            onClick={() => handleNavFilter('trending')}
+            className={`whitespace-nowrap shrink-0 cursor-pointer hover:text-[#111111] dark:hover:text-[#F4F4F2] ${
+              activeFilter === 'trending' ? 'text-[#111111] dark:text-[#F4F4F2] underline underline-offset-4' : ''
+            }`}
+          >
+            Trending
+          </button>
+          <a
+            href="#buying-guide"
+            className="whitespace-nowrap shrink-0 hover:text-[#111111] dark:hover:text-[#F4F4F2]"
+          >
+            Buying Guide
+          </a>
+          <a
+            href="#stores"
+            className="whitespace-nowrap shrink-0 hover:text-[#111111] dark:hover:text-[#F4F4F2]"
+          >
+            Stores &amp; SHEIN
+          </a>
+          <a
+            href="#faq"
+            className="whitespace-nowrap shrink-0 hover:text-[#111111] dark:hover:text-[#F4F4F2]"
+          >
+            FAQ &amp; Tips
+          </a>
+        </nav>
       </header>
 
       <main id="top" className="flex-1">
@@ -884,13 +925,13 @@ export default function App() {
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-8 border-b border-[#D4D4CE] dark:border-[#27272A]">
             <div className="max-w-2xl">
               <p className="text-xs font-medium text-[#5C5C58] dark:text-[#A1A1AA] mb-2">
-                2025 Hardware Studio Index
+                Aperture Website · 2025 Hardware Guide &amp; Index
               </p>
               <h1 className="font-display text-[clamp(2rem,3.6vw,3.125rem)] font-bold leading-[1.08] tracking-tight text-[#111111] dark:text-[#F4F4F2] text-balance">
                 Current Flagship Mobile Phones
               </h1>
               <p className="mt-3 text-[15px] leading-relaxed text-[#5C5C58] dark:text-[#A1A1AA] max-w-xl">
-                Hover or focus any studio frame to inspect display, processor, camera, and battery specifications. Select any model for its complete technical sheet.
+                Browse studio photography, inspect display, processor, camera, and battery specifications, read free buying guides, and shop official phone stores or SHEIN.
               </p>
               <div className="mt-4 flex flex-wrap items-center gap-4 text-xs font-medium">
                 <a
@@ -1913,9 +1954,9 @@ export default function App() {
 
           <div className="pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#5C5C58] dark:text-[#A1A1AA]">
             <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
-              <span className="font-medium text-[#111111] dark:text-[#F4F4F2]">© 2025 Aperture Mobile</span>
+              <span className="font-medium text-[#111111] dark:text-[#F4F4F2]">© 2025 Aperture Website</span>
               <span className="hidden sm:inline" aria-hidden="true">·</span>
-              <span>Flagship Hardware Website · Pricing in USD · Specifications subject to regional carrier bands</span>
+              <span>Flagship Smartphone &amp; Buying Guide Website · Pricing in USD · Specifications subject to regional carrier bands</span>
             </div>
 
             <nav aria-label="Tech content social channels" className="flex items-center gap-2">

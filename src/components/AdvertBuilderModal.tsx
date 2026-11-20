@@ -258,7 +258,7 @@ export const AdvertBuilderModal: React.FC<AdvertBuilderModalProps> = ({
         // Kicker
         ctx.fillStyle = themeTokens.muted;
         ctx.font = '600 22px system-ui, -apple-system, sans-serif';
-        ctx.fillText(`Aperture Mobile · ${phone.brand} · ${finishName}`, padding, padding + 32);
+        ctx.fillText(`Aperture Website · ${phone.brand} · ${finishName}`, padding, padding + 32);
 
         // Headline
         ctx.fillStyle = themeTokens.text;
@@ -334,7 +334,7 @@ export const AdvertBuilderModal: React.FC<AdvertBuilderModalProps> = ({
         let cursorY = padding + mediaH + 54;
         ctx.fillStyle = themeTokens.muted;
         ctx.font = '600 21px system-ui, -apple-system, sans-serif';
-        ctx.fillText(`Aperture Mobile · ${phone.brand} · ${finishName}`, padding, cursorY);
+        ctx.fillText(`Aperture Website · ${phone.brand} · ${finishName}`, padding, cursorY);
 
         cursorY += 58;
         ctx.fillStyle = themeTokens.text;
@@ -667,7 +667,7 @@ export const AdvertBuilderModal: React.FC<AdvertBuilderModalProps> = ({
                         className="text-xs font-medium truncate"
                         style={{ color: themeTokens.muted }}
                       >
-                        Aperture Mobile · {phone.brand} · {finishName}
+                        Aperture Website · {phone.brand} · {finishName}
                       </p>
                       <h3 className="mt-2 font-display text-lg sm:text-xl font-bold leading-tight text-balance">
                         {headline || `${phone.name}`}
@@ -762,7 +762,7 @@ export const AdvertBuilderModal: React.FC<AdvertBuilderModalProps> = ({
                       className="text-xs font-medium truncate"
                       style={{ color: themeTokens.muted }}
                     >
-                      Aperture Mobile · {phone.brand} · {finishName}
+                      Aperture Website · {phone.brand} · {finishName}
                     </p>
                     <h3 className="font-display text-lg font-bold leading-tight text-balance">
                       {headline || `${phone.name}`}

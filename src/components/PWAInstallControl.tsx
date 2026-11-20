@@ -40,7 +40,7 @@ export const PWAInstallButton: React.FC<PWAInstallButtonProps> = ({ variant = 'i
           className="inline-flex items-center gap-1.5 text-left hover:text-[#111111] dark:hover:text-[#F4F4F2] hover:underline underline-offset-4 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8] rounded"
         >
           <Download className="h-3 w-3 shrink-0" aria-hidden="true" />
-          <span>{isIOS ? 'Add to Home Screen' : 'Install Website App'}</span>
+          <span>{isIOS ? 'Add Website to Home Screen' : 'Save Aperture Website'}</span>
         </button>
       ) : (
         <button
@@ -49,7 +49,7 @@ export const PWAInstallButton: React.FC<PWAInstallButtonProps> = ({ variant = 'i
           className="inline-flex h-8 items-center gap-1.5 px-3 rounded-md border border-[#D4D4CE] dark:border-[#27272A] bg-white dark:bg-[#161618] text-xs font-medium text-[#111111] dark:text-[#F4F4F2] hover:border-[#111111] dark:hover:border-[#52525B] transition-colors whitespace-nowrap shrink-0 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8]"
         >
           <Download className="h-3.5 w-3.5 text-[#1D4ED8] dark:text-[#60A5FA]" aria-hidden="true" />
-          <span>{isIOS ? 'Add to Home Screen' : 'Install App'}</span>
+          <span>{isIOS ? 'Add to Home Screen' : 'Save Website Shortcut'}</span>
         </button>
       )}
 
@@ -72,13 +72,13 @@ export const PWAInstallButton: React.FC<PWAInstallButtonProps> = ({ variant = 'i
                   id="pwa-install-guide-title"
                   className="text-base font-semibold text-[#111111] dark:text-[#F4F4F2]"
                 >
-                  Install Aperture Mobile
+                  Save Aperture Website
                 </h3>
               </div>
               <button
                 type="button"
                 onClick={() => setShowGuideModal(false)}
-                aria-label="Close install instructions"
+                aria-label="Close save instructions"
                 className="inline-flex h-8 w-8 items-center justify-center rounded-md text-[#5C5C58] dark:text-[#A1A1AA] hover:bg-[#F6F6F4] dark:hover:bg-[#222226] hover:text-[#111111] dark:hover:text-[#F4F4F2] transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8]"
               >
                 <X className="h-4 w-4" aria-hidden="true" />
@@ -105,7 +105,7 @@ export const PWAInstallButton: React.FC<PWAInstallButtonProps> = ({ variant = 'i
                 <li className="flex items-start gap-2.5">
                   <span className="font-mono text-[#111111] dark:text-[#F4F4F2] shrink-0">03.</span>
                   <span>
-                    Tap <strong className="text-[#111111] dark:text-[#F4F4F2]">Add</strong> to launch Aperture Mobile as a standalone full-screen app.
+                    Tap <strong className="text-[#111111] dark:text-[#F4F4F2]">Add</strong> to open Aperture Website directly from your home screen.
                   </span>
                 </li>
               </ol>
@@ -122,7 +122,7 @@ export const PWAInstallButton: React.FC<PWAInstallButtonProps> = ({ variant = 'i
                   <span>
                     Click the <strong className="text-[#111111] dark:text-[#F4F4F2]">Install</strong> icon in the address bar or open browser menu{' '}
                     <span className="font-mono">&rarr;</span>{' '}
-                    <strong className="text-[#111111] dark:text-[#F4F4F2]">Add to Home Screen / Install Aperture Mobile</strong>.
+                    <strong className="text-[#111111] dark:text-[#F4F4F2]">Add to Home Screen / Install Aperture Website</strong>.
                   </span>
                 </li>
               </ol>

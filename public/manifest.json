@@ -1,8 +1,8 @@
 {
   "id": "/",
-  "name": "Aperture Mobile",
+  "name": "Aperture Website",
   "short_name": "Aperture",
-  "description": "Flagship smartphone specifications, side-by-side comparison, 6-month price trends, and free buying guides.",
+  "description": "Aperture Website — flagship smartphone specifications, side-by-side comparison, 6-month price trends, free buying guides, and official store links.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
